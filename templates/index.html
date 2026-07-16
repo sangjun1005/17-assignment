@@ -8,8 +8,8 @@ body {
     font-family: "맑은 고딕", Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f7f4ed;
-    color: #1c1c1c;
+    background-color: #ffffff;
+    color: #212121;
 }
 
 .container {
@@ -24,7 +24,7 @@ h1 {
 }
 
 .info {
-    color: #5f5f5d;
+    color: #93939f;
     font-size: 13px;
     margin-bottom: 15px;
     text-align: center;
@@ -39,26 +39,26 @@ input[type="text"] {
     padding: 5px;
     font-size: 14px;
     width: 260px;
-    border: 1px solid #d9d5c9;
+    border: 1px solid #d9d9dd;
 }
 
 select {
     padding: 5px;
     font-size: 14px;
-    border: 1px solid #d9d5c9;
+    border: 1px solid #d9d9dd;
 }
 
 button {
     padding: 5px 12px;
     font-size: 14px;
     cursor: pointer;
-    border: 1px solid #d9d5c9;
+    border: 1px solid #d9d9dd;
     background-color: #ffffff;
 }
 
 button[type="submit"] {
-    background-color: #1c1c1c;
-    color: #fcfbf8;
+    background-color: #17171c;
+    color: #ffffff;
     border: none;
 }
 
@@ -66,6 +66,16 @@ button[type="submit"] {
     margin-top: 8px;
     margin-bottom: 20px;
     text-align: center;
+}
+
+.btn-tj {
+    border: 1px solid #1863dc;
+    color: #1863dc;
+}
+
+.btn-ky {
+    border: 1px solid #ff7759;
+    color: #ff7759;
 }
 
 table {
@@ -76,23 +86,23 @@ table {
 }
 
 th, td {
-    border: 1px solid #d9d5c9;
+    border: 1px solid #d9d9dd;
     padding: 6px 8px;
     font-size: 13px;
     text-align: left;
 }
 
 th {
-    background-color: #eceae4;
-    color: #1c1c1c;
+    background-color: #eeece7;
+    color: #212121;
 }
 
 tr:nth-child(even) {
-    background-color: #f7f4ed;
+    background-color: #f1f5ff;
 }
 
 .empty {
-    color: #5f5f5d;
+    color: #93939f;
     margin-top: 15px;
 }
 
@@ -100,13 +110,13 @@ tr:nth-child(even) {
     margin-top: 10px;
     display: inline-block;
     font-size: 13px;
-    color: #1c1c1c;
+    color: #1863dc;
 }
 
 hr {
     margin: 20px 0;
     border: none;
-    border-top: 1px solid #d9d5c9;
+    border-top: 1px solid #d9d9dd;
 }
 </style>
 </head>
@@ -129,8 +139,8 @@ hr {
 </form>
 
 <div class="chart-buttons">
-    <a href="/?chart=TJ"><button type="button">TJ 인기차트 보기</button></a>
-    <a href="/?chart=금영"><button type="button">금영 인기차트 보기</button></a>
+    <a href="/?chart=TJ"><button type="button" class="btn-tj">TJ 인기차트 보기</button></a>
+    <a href="/?chart=금영"><button type="button" class="btn-ky">금영 인기차트 보기</button></a>
 </div>
 
 {% if show_results %}
