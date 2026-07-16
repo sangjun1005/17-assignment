@@ -6,71 +6,93 @@
 <style>
 body {
     font-family: "맑은 고딕", Arial, sans-serif;
-    margin: 20px;
-    background-color: #ffffff;
-    color: #222222;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f4ed;
+    color: #1c1c1c;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 h1 {
     font-size: 22px;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .info {
-    color: #555555;
+    color: #5f5f5d;
     font-size: 13px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 form {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 input[type="text"] {
     padding: 5px;
     font-size: 14px;
     width: 260px;
+    border: 1px solid #d9d5c9;
 }
 
 select {
     padding: 5px;
     font-size: 14px;
+    border: 1px solid #d9d5c9;
 }
 
 button {
     padding: 5px 12px;
     font-size: 14px;
     cursor: pointer;
+    border: 1px solid #d9d5c9;
+    background-color: #ffffff;
+}
+
+button[type="submit"] {
+    background-color: #1c1c1c;
+    color: #fcfbf8;
+    border: none;
 }
 
 .chart-buttons {
     margin-top: 8px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
     margin-top: 10px;
+    background-color: #ffffff;
 }
 
 th, td {
-    border: 1px solid #999999;
+    border: 1px solid #d9d5c9;
     padding: 6px 8px;
     font-size: 13px;
     text-align: left;
 }
 
 th {
-    background-color: #dddddd;
+    background-color: #eceae4;
+    color: #1c1c1c;
 }
 
 tr:nth-child(even) {
-    background-color: #f5f5f5;
+    background-color: #f7f4ed;
 }
 
 .empty {
-    color: #777777;
+    color: #5f5f5d;
     margin-top: 15px;
 }
 
@@ -78,16 +100,19 @@ tr:nth-child(even) {
     margin-top: 10px;
     display: inline-block;
     font-size: 13px;
+    color: #1c1c1c;
 }
 
 hr {
     margin: 20px 0;
     border: none;
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #d9d5c9;
 }
 </style>
 </head>
 <body>
+
+<div class="container">
 
 <h1>노래방 인기차트 검색</h1>
 <p class="info">TJ 곡수: {{ tj_count }} / 금영 곡수: {{ ky_count }}</p>
@@ -140,6 +165,8 @@ hr {
 <hr>
 <p class="info">가수나 노래 제목을 검색하거나, 위에서 차트 버튼을 눌러보세요.</p>
 {% endif %}
+
+</div>
 
 </body>
 </html>
